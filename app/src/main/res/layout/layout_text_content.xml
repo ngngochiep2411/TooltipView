@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:background="@android:color/holo_blue_bright">
+
+    <View
+        android:id="@+id/viewArrowOnTop"
+        android:layout_width="@dimen/default_margin_xlarge"
+        android:layout_height="@dimen/default_margin_large"
+        android:layout_marginStart="@dimen/default_margin_xlarge"
+        android:background="@drawable/background_triangle_white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textContentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tooltip"
+        android:layout_below="@id/viewArrowOnTop"
+        android:layout_marginStart="@dimen/default_margin_xlarge"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="@dimen/default_margin_xlarge"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/background_shape_corner_white"
+        android:gravity="center"
+        android:minHeight="@dimen/default_margin_4xlarge"
+        android:paddingStart="@dimen/default_margin_small"
+        android:paddingEnd="@dimen/default_margin_small"
+        android:scrollbars="vertical"
+        android:textColor="#E91E63"
+        tools:text="@string/data2" />
+
+    <View
+        android:id="@+id/viewArrowOnBottom"
+        android:layout_width="@dimen/default_margin_xlarge"
+        android:layout_height="@dimen/default_margin_large"
+        android:layout_below="@id/textContentDescription"
+        android:layout_marginStart="@dimen/default_margin_xlarge"
+        android:background="@drawable/background_triangle_white"
+        android:rotation="180"
+        android:visibility="invisible" />
+
+</RelativeLayout>
